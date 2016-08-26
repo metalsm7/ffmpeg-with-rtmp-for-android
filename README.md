@@ -1,7 +1,7 @@
 # ffmpeg-with-rtmp-for-android
 
-CentOS 7 에서의 작동을 보증합니다.
-이 안내는 [FFmpeg-Android](https://github.com/OnlyInAmerica/FFmpeg-Android)와 [guardianproject](https://github.com/guardianproject/openssl-android)라는 훌륭한 작업물을 기반으로 합니다.
+### CentOS 7 에서의 작동을 보증합니다.
+### 이 안내는 [FFmpeg-Android](https://github.com/OnlyInAmerica/FFmpeg-Android)와 [guardianproject](https://github.com/guardianproject/openssl-android)라는 훌륭한 작업물을 기반으로 합니다.
 
 ## Summary
 + 1. Setting Environment
