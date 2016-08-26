@@ -101,8 +101,7 @@ SLIBNAME_WITH_MAJOR='$(SLIBNAME).$(LIBMAJOR)' <br />LIB_INSTALL_EXTRA_CMD='$$(RA
 
 ORIGINAL | MODIFY
 ------------ | -------------
-enabled librtmp    && require_pkg_config librtmp librtmp/rtmp.h RTMP_Socket | 
-enabled librtmp    && require librtmp librtmp/rtmp.h RTMP_Socket -L/usr/local/src/ffmpeg/rtmpdump/librtmp/android/arm/lib -lrtmp
+enabled librtmp    && require_pkg_config librtmp librtmp/rtmp.h RTMP_Socket | enabled librtmp    && require librtmp librtmp/rtmp.h RTMP_Socket -L/usr/local/src/ffmpeg/rtmpdump/librtmp/android/arm/lib -lrtmp
 
 [FFmpeg-Android]의 build_ffmpeg_with_librtmp_for_android.sh  파일을 복사한 후 실행 권한을 줍니다.
 <pre><code>$ cd /usr/local/src/ffmpeg/ffmpeg-3.1.2
