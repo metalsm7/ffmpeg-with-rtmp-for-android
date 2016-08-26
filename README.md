@@ -11,9 +11,9 @@ CentOS 7 에서의 작동을 보증합니다.
 + 5. Download ffmpeg source
 
 ### 1. Setting Environment
-모든 소스 파일은 /usr/local/src 에 다운로드 받습니다.
-쉬운 구분을 위해 /usr/local/src/ffmpeg 디렉토리를 만들도록 합니다.
-<pre><code>cd /usr/local/src
+#### 모든 소스 파일은 /usr/local/src 에 다운로드 받습니다.
+#### 쉬운 구분을 위해 /usr/local/src/ffmpeg 디렉토리를 만들도록 합니다.
+#### <pre><code>cd /usr/local/src
 mkdir ffmpeg
 cd /usr/local/src/ffmpeg
 </code></pre>
