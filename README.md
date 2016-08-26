@@ -20,7 +20,7 @@ $ cd /usr/local/src/ffmpeg
 </code></pre>
 
 ### 2. Download NDK
-NDK를 다운로드 받습니다. [Download NDK](https://developer.android.com/ndk/downloads/index.html)
+NDK를 다운로드 받습니다. [Download NDK](https://developer.android.com/ndk/downloads/index.html)<br />
 후에 NDK의 쉬운 교체를 위해 link를 생성합니다.
 <pre><code>$ wget https://dl.google.com/android/repository/android-ndk-r12b-linux-x86_64.zip
 $ unzip android-ndk-r12b-linux-x86_64.zip
@@ -56,7 +56,7 @@ $ /usr/local/ndk/bdk-build
 <pre><code>$ cd /usr/local/src/ffmpeg
 $ git clone git://git.ffmpeg.org/rtmpdump
 </code></pre>
-[FFmpeg-Android]의 build_librtmp_for_android.sh 파일을 복사한 후 실행 권한을 줍니다.
+[FFmpeg-Android](https://github.com/OnlyInAmerica/FFmpeg-Android)의 build_librtmp_for_android.sh 파일을 복사한 후 실행 권한을 줍니다.
 <pre><code>$ cd /usr/local/src/ffmpeg/rtmpdump/librtmp
 $ cp /usr/local/src/ffmpeg/FFmpeg-Android/build_librtmp_for_android.sh ./
 $ chmod +x build_librtmp_for_android.sh
@@ -103,7 +103,7 @@ ORIGINAL | MODIFY
 ------------ | -------------
 enabled librtmp    && require_pkg_config librtmp librtmp/rtmp.h RTMP_Socket | enabled librtmp    && require librtmp librtmp/rtmp.h RTMP_Socket -L/usr/local/src/ffmpeg/rtmpdump/librtmp/android/arm/lib -lrtmp
 
-[FFmpeg-Android]의 build_ffmpeg_with_librtmp_for_android.sh  파일을 복사한 후 실행 권한을 줍니다.
+[FFmpeg-Android](https://github.com/OnlyInAmerica/FFmpeg-Android)의 build_ffmpeg_with_librtmp_for_android.sh  파일을 복사한 후 실행 권한을 줍니다.
 <pre><code>$ cd /usr/local/src/ffmpeg/ffmpeg-3.1.2
 $ cp /usr/local/src/ffmpeg/FFmpeg-Android/build_ffmpeg_with_librtmp_for_android.sh ./
 $ chmod +x build_ffmpeg_with_librtmp_for_android.sh
