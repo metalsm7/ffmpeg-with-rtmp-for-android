@@ -7,9 +7,9 @@
 + 1. Setting Environment
 + 2. Download NDK
 + 3. Clone FFmpeg-Android
-+ 4. Clone openssl
-+ 5. Clone librtmp
-+ 6. Download ffmpeg source
++ 4. Clone openssl & Build
++ 5. Clone librtmp & Build
++ 6. Download ffmpeg source & Build
 
 ### 1. Setting Environment
 모든 소스 파일은 /usr/local/src 에 다운로드 받습니다.
@@ -34,7 +34,7 @@ $ ln –s /usr/local/ndk-r12b /usr/local/ndk
 $ git clone https://github.com/OnlyInAmerica/FFmpeg-Android
 </code></pre>
 
-### 4. Clone openssl
+### 4. Clone openssl & Build
 [guardianproject](https://github.com/guardianproject/openssl-android)를 가져옵니다.
 <pre><code>$ cd /usr/local/src/ffmpeg
 $ git clone https://github.com/guardianproject/openssl-android
@@ -51,7 +51,7 @@ NDK빌드 합니다.
 $ /usr/local/ndk/bdk-build
 </code></pre>
 
-### 5. Clone librtmp
+### 5. Clone librtmp & Build
 [rtmpdump](git://git.ffmpeg.org/rtmpdump)를 가져옵니다.
 <pre><code>$ cd /usr/local/src/ffmpeg
 $ git clone git://git.ffmpeg.org/rtmpdump
@@ -84,7 +84,7 @@ $ ./build_librtmp_for_android.sh
 
 /usr/local/src/ffmpeg/rtmpdump/librtmp/android/arm/lib 디렉토리에 "librtmp-1.so", "librtmp.so" 파일이 있으면 성공입니다.
 
-### 6. Download ffmpeg source
+### 6. Download ffmpeg source & Build
 [ffmpeg](http://www.ffmpeg.org/download.html) 소스를 다운로드 합니다.
 <pre><code>$ cd /usr/local/src
 $ wget http://ffmpeg.org/releases/ffmpeg-3.1.2.tar.bz2
