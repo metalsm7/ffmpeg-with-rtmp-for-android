@@ -58,9 +58,9 @@ $ chmod +x make_librtmp.sh
 만약 사용자 환경에 맞춰 수정이 필요한 경우 make_librtmp.sh 파일의 일부를 현재 시스템 설정에 맞춰 변경해줍니다.
 <pre><code>$ vi make_librtmp.sh
 </code></pre>
-ORIGINAL | MODIFY
+! | Modify make_librtmp.sh
 ------------ | -------------
-NDK=/Applications/android-ndk-r9c <br />SYSROOT=$NDK/platforms/android-19/arch-arm/ <br />TOOLCHAIN=$NDK/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64 <br />OPENSSL_DIR=/Users/davidbrodsky/Code/android/openssl-android/ | NDK=/usr/local/ndk <br />SYSROOT=$NDK/platforms/android-19/arch-arm/ <br />TOOLCHAIN=$NDK/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 <br />OPENSSL_DIR=/usr/local/src/ffmpeg/openssl-android/
+Check Point | NDK=<b>/usr/local/ndk</b> <br />SYSROOT=$NDK<b>/platforms/android-19/arch-arm/</b> <br />TOOLCHAIN=$NDK<b>/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64</b> <br />OPENSSL_DIR=<b>/usr/local/src/ffmpeg/openssl-android/</b>
 Makefile 의 일부를 수정합니다.
 + 이는 linux 시스템에서 빌드 시 librtmp.so.1 가 아닌 librtmp-1.so 파일로 만들기 위함입니다.
 
@@ -106,9 +106,9 @@ $ chmod +x make_ffmpeg.sh
 <pre><code>$ cd /usr/local/src/ffmpeg/ffmpeg-3.1.2
 $ vi make_ffmpeg.sh</code></pre>
 
-ORIGINAL | MODIFY
+! | Modify make_ffmpeg.sh
 ------------ | -------------
-NDK=/Applications/android-ndk-r9c <br />SYSROOT=$NDK/platforms/android-19/arch-arm/ <br />TOOLCHAIN=$NDK/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64 <br /><br />OPENSSL_DIR=/Users/davidbrodsky/Code/android/openssl-android/ <br />LIBRTMP_DIR=/Users/davidbrodsky/Code/c/rtmpdump/librtmp/ | NDK=/usr/local/ndk <br />SYSROOT=$NDK/platforms/android-19/arch-arm/ <br />TOOLCHAIN=$NDK/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 <br /><br />OPENSSL_DIR=/usr/local/src/ffmpeg/openssl-android/ <br />LIBRTMP_DIR=/usr/local/src/ffmpeg/rtmpdump/librtmp/
+Check Point | NDK=<b>/usr/local/ndk</b> <br />SYSROOT=$NDK<b>/platforms/android-19/arch-arm/</b> <br />TOOLCHAIN=$NDK<b>/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64</b> <br /><br />OPENSSL_DIR=<b>/usr/local/src/ffmpeg/openssl-android/</b> <br />LIBRTMP_DIR=<b>/usr/local/src/ffmpeg/rtmpdump/librtmp/</b>
 
 ### 6.Build ffmpeg
 마지막으로 ffmpeg를 빌드합니다.
