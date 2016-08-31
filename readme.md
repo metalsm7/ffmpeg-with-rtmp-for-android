@@ -24,7 +24,7 @@ NDK를 다운로드 받습니다. [Download NDK](https://developer.android.com/n
 후에 NDK의 쉬운 교체를 위해 link를 생성합니다.
 <pre><code>$ wget https://dl.google.com/android/repository/android-ndk-r12b-linux-x86_64.zip
 $ unzip android-ndk-r12b-linux-x86_64.zip
-$ mv android-ndk-r12b-linux-x86_64.zip /usr/local/ndk-r12b
+$ mv android-ndk-r12b-linux-x86_64 /usr/local/ndk-r12b
 $ ln –s /usr/local/ndk-r12b /usr/local/ndk 
 </code></pre>
 
