@@ -42,7 +42,7 @@ ORIGINAL | MODIFY
 <b>NDK_TOOLCHAIN_VERSION=4.4.3</b> <br />APP_PROJECT_PATH := $(shell pwd) <br />APP_BUILD_SCRIPT := $(APP_PROJECT_PATH)/Android.mk | <b>NDK_TOOLCHAIN_VERSION=4.9</b> <br /><b>APP_ABI := all32</b><br />APP_PROJECT_PATH := $(shell pwd) <br />APP_BUILD_SCRIPT := $(APP_PROJECT_PATH)/Android.mk
 NDK빌드 합니다.
 <pre><code>$ cd /usr/local/src/ffmpeg/openssl-android
-$ /usr/local/ndk/bdk-build
+$ /usr/local/ndk/ndk-build
 </code></pre>
 
 ### 4. Get librtmp & Build
